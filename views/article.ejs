@@ -1,0 +1,39 @@
+<%- include('header'); -%>
+<div class="content">
+    <table id="catalog">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th scope="col">Reference</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">VAT</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <th scope="row">
+                        <%= item.name %>
+                    </th>
+                    <td>
+                        <%= item.reference %>
+                    </td>
+                    <td>
+                        <%= item.category %>
+                    </td>
+                    <td>
+                        <%= item.price %>AED
+                    </td>
+                    <td>
+                        <%= item.stock %>
+                    </td>
+                    <td>
+                        <%= item.vat %>%
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+
+<%- include('footer'); -%>
